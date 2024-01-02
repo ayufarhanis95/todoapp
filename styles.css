@@ -78,23 +78,6 @@ li:hover {
     cursor: pointer;
 }
 
-
-
-/* #singlelist:hover {
-    background-color: var(--listhover-color);
-    cursor: pointer;
+.strike {
+    text-decoration: line-through;
 }
-
-li {
-    list-style-type: none;
-    background-color: var(--list-color);
-    z-index: 0;
-}
-
-span {
-    background-color: var(--list-color);
-}
-
-li:hover , span:hover {
-    background-color: var(--listhover-color);
-} */

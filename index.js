@@ -1,16 +1,23 @@
 const inputEl = document.getElementById("input")
 const addBtn = document.getElementById("add")
 const ulEl = document.getElementById("myUl")
-const liEl = document.querySelector("li")
+
+// console.log(liEl)
 
 
 
 addBtn.addEventListener("click", function(){
-    ulEl.innerHTML += `<li> ${inputEl.value} </li>`
+    ulEl.innerHTML += `<li class='check'> ${inputEl.value} </li>`
     inputEl.value = "";
 })
 
-ulEl.addEventListener("click", function(){
-    
+
+
+ulEl.addEventListener("click",function(ev) {
+
+    if (ev.target.tagName === "LI") {
+        ev.target.classList.toggle("strike")
+    }
+
 })
 
