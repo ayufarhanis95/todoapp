@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #dee2ff;
+    color: #3e4680;
+    user-select: none;
+}
+
+:root {
+    --add-color: #cbc0d3;
+    --addhover-color: #8e9aaf;
+    --list-color: #f0d4ea;
+    --listhover-color: #e7c3c8;
+}
+
+img {
+    max-width: 300px;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#todolist {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#input {
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid var(--addhover-color);
+    padding: 10px 0 10px 0;
+}
+
+#add {
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid var(--add-color);
+    padding: 10px 0 10px 0;
+    background-color: var(--add-color);
+}
+
+#add:hover {
+    cursor: pointer;
+    background-color: var(--addhover-color);
+    border: 2px solid var(--addhover-color);
+}
+
+li {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid var(--list-color);
+    padding: 10px;
+    background-color: var(--list-color);
+    list-style-type: none;
+}
+
+li:hover {
+    background-color: var(--listhover-color);
+    cursor: pointer;
+}
+
+
+
+/* #singlelist:hover {
+    background-color: var(--listhover-color);
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+    background-color: var(--list-color);
+    z-index: 0;
+}
+
+span {
+    background-color: var(--list-color);
+}
+
+li:hover , span:hover {
+    background-color: var(--listhover-color);
+} */
